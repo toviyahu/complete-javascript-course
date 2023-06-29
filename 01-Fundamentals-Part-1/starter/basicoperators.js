@@ -35,7 +35,7 @@ else
 
 //Q5
 language = 'English';
-const description = country + " is in " + continent + ", and its " + population + " million people speak " + language;
+description = country + " is in " + continent + ", and its " + population + " million people speak " + language;
 console.log("Question 5");
 console.log(description);
 
