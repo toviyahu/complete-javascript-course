@@ -1,7 +1,7 @@
 'use strict';
 
 
-function logger() {
+/* function logger() {
     console.log("My name is Ronke");
 }
 
@@ -18,4 +18,18 @@ console.log(appleJuice);
 console.log( fruitProcessor(5, 0));
 
 const appleOrangeJuice = fruitProcessor(2, 4);
-console.log(appleOrangeJuice);
+console.log(appleOrangeJuice); */
+
+//function declaration
+function calcAge1(birthYear){
+    return 2037 - birthYear;
+}
+const age1 = calcAge1(1981);
+
+//Function expression
+const calcAge2 = function(birthYear){
+    return 2040 - birthYear;
+}
+const age2 = calcAge2(1981);
+
+console.log(age1, age2);
