@@ -168,7 +168,7 @@ if (birthYear <= 2000) {
 }
 
 console.log(century); */
-
+/*
 //type conversion
 const inputYear = '1991';
 console.log(Number(inputYear), inputYear);
@@ -188,4 +188,68 @@ console.log('23'/ '2');
 let n = '1' + 1; //'11' it concatenates '1' + 1
 n = n - 1;
 console.log(n);
+**/
 
+//Truthy and Falsy Values
+/*5 Falsy Values:
+1. 0
+2. ''
+3. undefined
+4. null
+5. NaN
+*/ 
+/* console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean('Ronke'));
+console.log(Boolean({}));
+console.log(Boolean(''));
+
+const money = 0;
+if (money){
+      console.log("Don't spend it all ;)");
+} else{
+      console.log('You should get a job!');
+}
+
+let height = 0;
+if (height){
+      console.log("YAY! Height is defined!");
+} else{
+      console.log('Height is UNDEFINED!');
+}
+ */
+/* //Equality Operators == vs. ===
+const age = 18;
+//const age = '18';
+if (age === 18){
+      console.log("You just became an adult :D (strict)");
+} 
+
+if (age == 18){
+      console.log("You just became an adult :D (loose)");
+} */
+
+/* const favorite = prompt("What's your favorite number?");
+console.log(favorite);
+console.log(typeof favorite); */
+
+/* if(favorite == 23) //'23' == 23 (loose)
+{
+      console.log("Cool, 23 is an amazing number!");
+} */
+
+/* if(favorite === 23) //strict need to convert to a number
+{
+      console.log("Cool, 23 is an amazing number!");
+} */
+
+/* const favorite = Number(prompt("What's your favorite number?"));
+console.log(favorite);
+console.log(typeof favorite);
+if(favorite === 23) //23 === 23
+{
+      console.log("Cool, 23 is an amazing number!");
+}
+ */
+//Switch Statements
+const day = 'monday';
