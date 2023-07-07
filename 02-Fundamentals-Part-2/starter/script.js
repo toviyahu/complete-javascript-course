@@ -176,7 +176,7 @@ console.log(jonas);
 //Write with object values:
 //"Jonas has 3 friends and his best friends is called Michael."
 console.log(`${jonas.firstName} has ${jonas.friends.length} friends and his best friend is called ${jonas.friends[0]}.`); */
-
+/* 
 //Object Methods
 
 const jonas = { 
@@ -213,4 +213,12 @@ console.log(jonas.age);
 
 //Challenge
 
- console.log(jonas.getSummary());
+ console.log(jonas.getSummary()); */
+
+ //For Loop
+ for (let index = 1; index <= 10; index++) {
+    console.log(`Lifting weights repetion ${index}🏋🏿‍♀️` );
+    
+ }
+
+ 
