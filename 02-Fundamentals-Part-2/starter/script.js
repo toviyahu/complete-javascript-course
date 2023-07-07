@@ -139,3 +139,41 @@ if(friends.includes("Peter")){
 if(friends.includes("Steven")){
     console.log("You have a friend called Steven!");
 } */
+
+//OBJECTS
+
+const jonas = { 
+    firstName: 'Jonas',
+    lastName: 'Schmedtmann',
+    age: 2037 - 1991,
+    job: 'teacher',
+    friends: ["Michael", "Peter", "Steven"]
+
+}
+console.log(jonas);
+console.log(jonas.lastName);
+console.log(jonas['lastName']);
+const nameKey = 'Name';
+console.log(jonas['first' + nameKey]);
+console.log(jonas['last' + nameKey]);
+
+
+//when to use bracket notation 
+const interestedIn = prompt('What do you want to know about Jonas? Choose between firstName, lastName, age, job, and friends');
+console.log(jonas[interestedIn]); //use bracket because
+//we will not know what property in the Object the user will choose
+
+if(jonas[interestedIn]){
+    console.log(jonas[interestedIn]);
+}else{
+    console.log("Wrong request Choose between firstName, lastName, age, job, and friends.");
+}
+
+jonas.location = "Portugal";
+jonas['twitter'] = "@jonasschmedtman";
+console.log(jonas);
+//Challenge
+//Write with object values:
+//"Jonas has 3 friends and his best friends is called Michael."
+console.log(`${jonas.firstName} has ${jonas.friends.length} friends and his best friend is called ${jonas.friends[0]}.`);
+
