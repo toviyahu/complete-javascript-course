@@ -64,7 +64,7 @@ console.log(yearsUntilRetirement(1991)); */
 console.log(yearsUntilRetirement(1991, 'Jonas')); */ 
 
 
-//Arrays
+/* //Arrays
 const friend1 = 'Michael';
 const friend2 = 'Steven';
 const friend3 = 'Peter';
@@ -96,4 +96,46 @@ const age3 =calcAge(years[years.length - 1]);
 console.log(age1, age2, age3);
 
 const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length-1])];
-console.log(ages);
+console.log(ages); */
+/* 
+//Basic Array Operations (Methods)
+
+//add element at the end
+const friends = ["Michael", "Steven", "Peter" ];
+//friends.push("Jay");
+const newLength = friends.push("Jay");
+console.log(friends);
+console.log(newLength);
+
+//add element at the beginning
+friends.unshift("John");
+console.log(friends);
+
+//remove last element of the array
+friends.pop();
+console.log(friends);
+friends.pop();
+console.log(friends);
+
+//remove first element of the array
+friends.shift();
+console.log(friends);
+
+//What element is a particular value?
+console.log(friends.indexOf("Steven"));
+console.log(friends.indexOf("Bob"));  //shows -1 because it is not an element
+
+friends.push(23);
+console.log(friends.includes("Steven"));
+console.log(friends.includes("Bob"));
+console.log(friends.includes("23")); //does not do Type Coercion (it is strict)
+console.log(friends.includes(23)); //true because it is direct
+
+// you can use includes to write conditionals
+if(friends.includes("Peter")){
+    console.log("You have a friend called Peter!");
+} //nothing returns
+
+if(friends.includes("Steven")){
+    console.log("You have a friend called Steven!");
+} */
