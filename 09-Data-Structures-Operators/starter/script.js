@@ -50,6 +50,39 @@ const restaurant = {
   },
 };
 
+//Use ANY data type, return ANY data type, short-circuiting
+//if the operand is a truthy value it will be returned and the other operand will not be evaluated
+console.log(3 || 'Jonas');
+console.log('' || 'Jonas');
+console.log(true || 0);
+console.log(undefined || null);
+
+console.log(undefined || 0 || '' || 'Hello' || 23 || null);
+
+restaurant.numGuests = 0;
+const guests1 = restaurant.numGuests ? restaurant.numGuests : 10;
+console.log(guests1);
+
+const guests2 = restaurant.numGuests || 10;
+console.log(guests2);
+
+console.log('----AND----');
+//if the operand is a falsy value it will be returned and the other operand will not be evaluated
+console.log(0 && 'Jonas');
+console.log(7 && 'Jonas');
+
+console.log('Hello' && 23 && null && 'Jonas');
+
+//Practical example
+if(restaurant.orderPizza){
+  restaurant.orderPizza('mushrooms', 'spinach');
+}
+
+restaurant.orderPizza && restaurant.orderPizza('mushrooms', 'spinach');  //same as if statement above
+
+/* 
+///////////////////////////////////////
+//Rest Pattern and Parameters
 //1) Destructuring
 //SPREAD because on the right side of the = 
 const arr = [1, 2, ...[3, 4]];
@@ -87,7 +120,7 @@ restaurant.orderPizza('mushrooms');
 
 //rest operator is used in function declarations and function expressions (variables that hold functions)
 //spread operator is used in function calls and array literals
-
+ */
 ////////////////////////////////////////////////
 
 /* /* /////Spread Operator
